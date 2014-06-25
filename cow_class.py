@@ -4,11 +4,11 @@ class Cow(Animal):
 
     """ This is a cow """
 
-    def __init__(self):
+    def __init__(self, name):
         #default values for  cow to be instantiated = growth_Rate = 1;
         #light_need = 5; water_need = 6; food_need = 3;
         
-        super().__init__(1,5,6,3)
+        super().__init__(1,5,6,3,name = "Jim")
 
         self._type = "Cow"
 

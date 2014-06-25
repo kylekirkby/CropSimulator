@@ -4,11 +4,11 @@ class Sheep(Animal):
 
     """ This is a sheep """
 
-    def __init__(self):
+    def __init__(self,name):
         #default values for  sheep to be instantiated = growth_Rate = 1;
         #light_need = 4; water_need = 5; food_need = 4;
         
-        super().__init__(1,4,5,4)
+        super().__init__(1,4,5,4,name = "Jim")
 
         self._type = "Sheep"
 

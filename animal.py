@@ -2,7 +2,7 @@ class Animal:
 
     """ This is the super class for animals """
 
-    def __init__(self, growth_rate, light_need, water_need, food_need):
+    def __init__(self, growth_rate, light_need, water_need, food_need, name):
 
         #attributes
 
@@ -15,6 +15,7 @@ class Animal:
         self._water_need = water_need
         self._status = "Newly Born"
         self._type = "Generic"
+        self._name = name
 
     def needs(self):
         return {'food need':self._food_need,'water need':self._water_need,'light need':self._light_need}
@@ -22,7 +23,7 @@ class Animal:
     
     def report(self):
         #returns a dict containing type,status, growth and days growing
-        return {'type':self._type,'status':self._status,'growth':self._growth,'days growing':self._days_growing}
+        return {'name':self._name,'type':self._type,'status':self._status,'growth':self._growth,'days growing':self._days_growing}
     
     def _update_status(self):
         if self._growth > 15:
