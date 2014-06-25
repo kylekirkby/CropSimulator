@@ -14,9 +14,9 @@ class Sheep(Animal):
 
 
         
-    def grow(self, light, water, food):
+    def grow(self, food, water):
 
-        if light >= self._light_need and water >= self._water_need and food >= self._food_need:
+        if water >= self._water_need and food >= self._food_need:
 
             if self._status == "Newly Born":
 
